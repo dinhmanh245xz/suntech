@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>92 WEAR</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body >
+    <div class="page__wrapper">
+        <header class="page-header">
+            <div class="header-top">
+                <div class="container header-top--container">
+                    <!-- header-left -->
+                    <div class="header-top--left">
+                        <a href="#" class="person color-text">Kênh người bán</a>
+                        <span class="separator ">&nbsp;</span>
+                        <a href="#" class="app color-text">Tải ứng dụng</a>
+                        <span class="separator">&nbsp;</span>
+                        <div class="header-top-social">
+                            <a href="" class="header-top-sociall--facebook color-text">
+                                <i class='bx bxl-facebook-circle bx-rotate-180 bx-tada' style='color:#141313'  ></i>
+                            </a>
+                            <a href="" class="header-top-sociall--instagram color-text">
+                                <i class='bx bxl-instagram-alt bx-flip-horizontal bx-tada' style='color:#141313' ></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-top--right">
+                        <div class="header-language">
+                            <span class="header-language__trigger color-two ">
+                               
+                                Ngôn ngữ
+                                <i class='bx bxs-down-arrow'></i>
+                            </span>
+                            <ul class="header__language--content">
+                                <li class="header__language-list"><a href="" class="header__language--link">
+                                    Tiếng Việt
+                                </a></li>
+                                <li class="header__language-list"><a href="" class="header__language--link">
+                                    English
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__account">
+                        <span class="header__account--trigger">
+                            <i class='bx bxs-user-circle bx-tada bx-flip-horizontal' style='color:#141313; font-size: 17px;' ></i>
+                            <span class="account-icon"> 
+                                
+                                Tài khoản
+                            </span>  
+                        </span>
+                        <ul class="header__account--content">
+                            <li>
+                                <a href="">Đăng nhập / Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="container header-content--container">
+                    <!-- logo -->
+                    <div class="header-logo">
+                        <a href="#" class="logo-link">
+                            <img class="img-logo" src="./img/logo/logo.jpeg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <!-- end logo -->
+                    <!-- search -->
+                    <div class="header-search">
+                        <!-- search category -->
+                        <div class="header-search__category">
+                            <span class="header-search__category-trigger" data-toggle="dropdow">
+                                All
+
+                            </span>
+                            <ul class="dropdown-menu header-search__category-content">
+                              <li class="list-category"><a href="" class="category-link">
+                                  All
+
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Thời trang nam
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Thời trang nữ
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Handbage
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Đồng hồ nữ
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Đồ trẻ em
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Thời trang nam
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Thời trang nữ
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Handbage
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Đồ trẻ em
+                              </a></li>
+                              <li class="list-category"><a href="" class="category-link">
+                                Thời trang nữ
+                              </a></li>
+                            </ul>
+                        </div>
+                        <!-- end search category -->
+                        <div class="header-search__control">
+                            <input type="text" class="form-control ui-autocomplete-input" name="keyword">
+                        </div>
+                        <div class="header-search__actions">
+                            <button class="btn-search" id="btn-search-btn">
+                                <span>search</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end search -->
+                    <!-- header-cart -->
+                    <div class="header-cart">
+                        <div class="header-cart-icon">
+                            <i class='bx bx-cart bx-tada bx-rotate-180' style='color:#ffffff;font-size: 40px;'  ></i>
+                            <span class="header-cart-count">0</span>
+                        </div>
+                        <div class="minicart"></div>
+                    </div>
+                    <!-- end header-cart -->
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="container header-menu-container">
+                    <ul class="menu-items">
+                        <li class="menu-item menu-item-custom">
+                            <a href="#" class="menu-item-link">Thời trang nữ</a>
+                            <div class="sub-menu">
+                                <div class="container sub-menu-container">
+                                    <!-- item menu 1 -->
+                                    <div class="sub-menu-col">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun dài tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun ngắn tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Ảo nỉ</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end menu item 1 -->
+
+                                     <!-- item menu 2 -->
+                                     <div class="sub-menu-col">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun dài tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun ngắn tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Ảo nỉ</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end menu item  -->
+
+                                     <!-- item menu 3 -->
+                                     <div class="sub-menu-col">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun dài tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun ngắn tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Ảo nỉ</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end menu item  -->
+
+                                     <!-- item menu 4 -->
+                                     <div class="sub-menu-col">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun dài tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun ngắn tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Ảo nỉ</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end menu item  -->
+                                     <!-- item menu 5 -->
+                                     <div class="sub-menu-col">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun dài tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun ngắn tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Ảo nỉ</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end menu item 1 -->
+
+                                       <!-- item menu 6 -->
+                                       <div class="sub-menu-col">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun dài tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo thun ngắn tay</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href="">Ảo nỉ</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end menu item 1 -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item-right">
+                            <a href="#" class="menu-item-link">ON SALE NOW!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+        </header>
+        <div class="header-menu-bg"></div>
+        <main class="page-main">
+            <div class="container">
+                <!-- banner-1 -->
+                <div class="single-banner">
+                    <div class="banner-thumb">
+                        <a href="" class="banner-link">
+                            <img src="./img/banner/1.jpeg" alt="" class="img-banner">
+                        </a>
+                        <div class="banner-text"></div>
+                    </div>
+                </div>
+                <!-- end banner -->
+
+                 <!-- banner-1 -->
+                 <div class="single-banner">
+                    <div class="banner-thumb">
+                        <a href="" class="banner-link">
+                            <img src="./img/banner/2.jpeg" alt="" class="img-banner">
+                        </a>
+                        <div class="banner-text"></div>
+                    </div>
+                </div>
+                <!-- end banner -->
+                <div class="home-banner home-banner--slide slick-initialized slick-slider">
+                    <span style="display: block;" type="button" class="slick-prev slick-arrow">
+
+                    </span>
+                    <!-- slider -->
+                    <div class="slick-list draggable"></div>
+                    <!-- end slder -->
+                    <span style="display: block;" type="button" class="slick-next slick-arrow">
+
+                    </span>
+                </div>
+            </div>
+            <div class="home-product-hot">
+                <div class="container">
+                    <div class="block-heading">
+                        <h2 class="title">Danh mục nổi bật</h2>
+                        <a href="" class="btn-product">SHOP ALL DEALS</a>
+                    </div>
+                    <div class="block-content">
+                        <div class="home-product-hot--slide slick-nav--style1 slick-initialized slick-slider" >
+                            <span style="display: block;" type="button" class="slick-prev slick-arrow">
+                                <span></span>
+                            </span>
+                            <div class="slick-list draggable">
+                                <div class="slick-track" style="opacity: 1; width: 2440px;transform:translate3d(0px,0px,0px);">
+                                    <!-- item-product-1 -->
+                                    <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                            <div class="product-hot__item-info">
+                                                <div class="product-hot__item-photo">
+                                                    <a href="">
+                                                        <img src="./img/cate/A120N-QAA0956-MBB3-01-300x450.jpeg" alt="" srcset="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-hot__item-detail">
+                                                    <h3 class="product-hot__item-title">
+                                                        <a href="" class="product-hot__link">
+                                                            Quần tây nữ công sở nắp túi đính cạp QAA1049 92WEAR
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-hot__item-price">
+                                                        <span class="price">495.000 $</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                    </div>
+                                    <!-- end product-item -->
+
+                                      <!-- item-product-2 -->
+                                      <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                        <div class="product-hot__item-info">
+                                            <div class="product-hot__item-photo">
+                                                <a href="">
+                                                    <img src="./img/cate/A120N-QAA0956-MBB3-01-300x450.jpeg" alt="" srcset="">
+                                                </a>
+                                            </div>
+                                            <div class="product-hot__item-detail">
+                                                <h3 class="product-hot__item-title">
+                                                    <a href="" class="product-hot__link">
+                                                        Quần tây nữ công sở nắp túi đính cạp QAA1049 92WEAR
+                                                    </a>
+                                                </h3>
+                                                <div class="product-hot__item-price">
+                                                    <span class="price">495.000 $</span>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                </div>
+                                <!-- end product-item -->
+
+                                  <!-- item-product-3 -->
+                                  <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                    <div class="product-hot__item-info">
+                                        <div class="product-hot__item-photo">
+                                            <a href="">
+                                                <img src="./img/cate/A120N-QAA0956-MBB3-01-300x450.jpeg" alt="" srcset="">
+                                            </a>
+                                        </div>
+                                        <div class="product-hot__item-detail">
+                                            <h3 class="product-hot__item-title">
+                                                <a href="" class="product-hot__link">
+                                                    Quần tây nữ công sở nắp túi đính cạp QAA1049 92WEAR
+                                                </a>
+                                            </h3>
+                                            <div class="product-hot__item-price">
+                                                <span class="price">495.000 $</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            <!-- end product-item -->
+
+                              <!-- item-product-4 -->
+                              <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                <div class="product-hot__item-info">
+                                    <div class="product-hot__item-photo">
+                                        <a href="">
+                                            <img src="./img/cate/A120N-QAA0956-MBB3-01-300x450.jpeg" alt="" srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="product-hot__item-detail">
+                                        <h3 class="product-hot__item-title">
+                                            <a href="" class="product-hot__link">
+                                                Quần tây nữ công sở nắp túi đính cạp QAA1049 92WEAR
+                                            </a>
+                                        </h3>
+                                        <div class="product-hot__item-price">
+                                            <span class="price">495.000 $</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                        <!-- end product-item -->
+                          <!-- item-product-5-->
+                          <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                    <a href="">
+                                        <img src="./img/cate/A120N-QAA0956-MBB3-01-300x450.jpeg" alt="" srcset="">
+                                    </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__link">
+                                            Quần tây nữ công sở nắp túi đính cạp QAA1049 92WEAR
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="price">495.000 $</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                    <!-- end product-item -->
+                                    
+                                </div>
+                            </div>
+                            <span style="display: block;" type="button" class="slick-next slick-arrow">
+                                <span></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="content-home-banner">
+                        <div class="home-banner">
+                            <div class="single-banner padding-15px-lr">
+                                <div class="banner-thumb ">
+                                    <a href="" class="thumb-img-link">
+                                        <img src="./img/banner/4.jpeg" alt="" srcset="">         
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-banner">
+                            <div class="single-banner padding-15px-lr">
+                                <div class="banner-thumb ">
+                                    <a href="" class="thumb-img-link">
+                                        <img src="./img/banner/4.jpeg" alt="" srcset="">         
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+                <!-- single-banner -->
+                <div class="single-banner ">
+                    <div class="banner-thumb ">
+                        <a href="" class="thumb-img-link">
+                            <img src="./img/banner/2.jpeg" alt="" srcset="">         
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-hr"></div>
+                <!-- end single banner -->
+                <div class="home-product-upsell">
+                    <div class="block-heading">
+                        <h2 class="title-product">Dành cho bạn</h2>
+                        <div class="info">
+                            <img src="./img/product/product-upsell.png" alt="" srcset="">
+                        </div>
+                        <a href="#" class="btn-view-all">Xem tất cả</a>
+                    </div>
+                    <div class="block-content"></div>
+                      <!-- single-banner -->
+                <div class="single-banner ">
+                    <div class="banner-thumb ">
+                        <a href="" class="thumb-img-link">
+                            <img src="./img/banner/3.jpeg" alt="" srcset="">         
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-hr"></div>
+                <!-- end single banner -->
+
+                </div>
+                <div class="home-product-today">
+                    <div class="block-heading">
+                        <h2 class="home-product-title color-text-one">GỢI Ý HÔM NAY</h2>
+                        <a href="#" class="btn-view-all color-text-one">
+                            Xem tất cả
+                            <i class='bx bx-chevrons-right bx-burst' style='color:#f3f2f2' ></i>
+                        </a>
+                    </div>
+                    <div class="block-content">
+                        <!-- item 1 -->
+                        <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 2 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 3 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 4 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 5 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 6 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 7 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 8 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 9 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                           <!-- item 10 -->
+                           <div class="product-hot__item">
+                            <div class="product-hot__item-info">
+                                <div class="product-hot__item-photo">
+                                  <a href="" class="product-hot__item-link">
+                                    <img class="product-hot__item-img" src="./img/product/A121N-DEW0849-HTX1-01-300x450.jpeg" alt="" srcset="">
+                                  </a>
+                                </div>
+                                <div class="product-hot__item-detail">
+                                    <h3 class="product-hot__item-title">
+                                        <a href="" class="product-hot__item-link">
+                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                        </a>
+                                    </h3>
+                                    <div class="product-hot__item-price">
+                                        <span class="product-hot__price">735.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        
+                    </div>
+                    <div class="text-center">
+                        <a href="" class="btn btn-shoball-link">SHOP ALL DEALS</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row footer-top-row">
+                        <!-- col 1 -->
+                        <div class="col-md-3 col-sm padding-15px-lr">
+                            <h3 class="title-footer">HỖ TRỢ KHÁCH HÀNG</h3>
+                            <div class="hotline">
+                                <p class="desc-hotline"> Hotline chăm sóc khách hàng: 1900-6035 (1000đ/phút , 8-21h kể cả T7, CN)</p>
+                            </div>
+                            <ul class="footer-list">
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Hướng dẫn mua hàng</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Chính sách vận chuyển</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Chính sách đổi trả</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col  -->
+                         <!-- col 2 -->
+                         <div class="col-md-3 col-sm padding-15px-lr">
+                            <h3 class="title-footer">HỖ TRỢ KHÁCH HÀNG</h3>
+                            <div class="hotline">
+                                <p class="desc-hotline"> Hotline chăm sóc khách hàng: 1900-6035 (1000đ/phút , 8-21h kể cả T7, CN)</p>
+                            </div>
+                            <ul class="footer-list">
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Hướng dẫn mua hàng</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Chính sách vận chuyển</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Chính sách đổi trả</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col  -->
+                          <!-- col 3 -->
+                          <div class="col-md-3 col-sm padding-15px-lr">
+                            <h3 class="title-footer">HỖ TRỢ KHÁCH HÀNG</h3>
+                            <div class="hotline">
+                                <p class="desc-hotline"> Hotline chăm sóc khách hàng: 1900-6035 (1000đ/phút , 8-21h kể cả T7, CN)</p>
+                            </div>
+                            <ul class="footer-list">
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Hướng dẫn mua hàng</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Chính sách vận chuyển</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Chính sách đổi trả</a></li>
+                                <li class="footer-list-tiem"><a class="footer-item-link" href="">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <!-- end col  -->
+                          <!-- col 4 -->
+                          <div class="col-md-3 col-sm padding-15px-lr">
+                            <h3 class="title-footer">PHƯƠNG THỨC THANH TOÁN</h3>
+                            <div class="row payment ">
+                                <!-- col 1 -->
+                               <div class="col-md-4 col-sm-4 float-lef">
+                                   <img src="./img/app/payment1.png" alt="" srcset="">
+                               </div>   
+                               <!-- end col -->
+
+                                 <!-- col 2 -->
+                                 <div class="col-md-4 col-sm-4 float-lef">
+                                    <img src="./img/app/payment2.png" alt="" srcset="">
+                                </div>   
+                                <!-- end col -->
+
+                                  <!-- col 3 -->
+                               <div class="col-md-4 col-sm-4 float-lef">
+                                <img src="./img/app/payment3.png" alt="" srcset="">
+                            </div>   
+                            <!-- end col --> 
+                            </div>
+                            <div class="row payment">
+                                  <!-- col 4 -->
+                                  <div class="col-md-4 col-sm-4 float-lef">
+                                    <img src="./img/app/payment4.png" alt="" srcset="">
+                                </div>   
+                                <!-- end col -->
+
+                                    <!-- col 5 -->
+                               <div class="col-md-4 col-sm-4 float-lef">
+                                <img src="./img/app/payment5.png" alt="" srcset="">
+                            </div>   
+                            <!-- end col -->
+
+                                <!-- col 6 -->
+                                <div class="col-md-4 col-sm-4 float-lef">
+                                    <img src="./img/app/payment6.png" alt="" srcset="">
+                                </div>   
+                                <!-- end col -->
+                            </div>
+                            
+                        </div>
+                        <!-- end col  -->
+                          <!-- col 5 -->
+                          <div class="col-md-3 col-sm padding-15px-lr">
+                            <h3 class="title-footer">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                            <div class="text-center social">
+                                <a href="">
+                                    <img src="./img/social/facebook.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./img/social/youtube.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./img/social/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <!-- 1 -->
+                            <div class="appstore">
+                                <h3>TẢI ỨNG DỤNG </h3>
+                                <p><a href=""><img src="./img/app/appstore.png" alt=""></a></p>
+                                <p><a href=""><img src="./img/app/googleplay.png" alt=""></a></p>
+                            </div>
+                            <!-- end -->
+                             <!-- 2 -->
+                             <div class="appstore">
+                                <h3 class="mag-t-b">THEO DÕI ZALO </h3>
+                                <p><a href=""><img src="./img/app/zalo_92wear.jpeg" alt=""></a></p>
+                               
+                            </div>
+                            <!-- end -->
+                        </div>
+                        <!-- end col  -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                   <b>Địa chỉ văn phòng:</b> 
+                   Lô S3-1, cụm làng nghề Tân Triều, Triều Khúc, Thanh Xuân, Hà Nội 
+                   <br>
+                   92WEAR nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp  
+                   <br>
+                   tại văn phòng hoặc trung tâm xử lý đơn hàng
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
