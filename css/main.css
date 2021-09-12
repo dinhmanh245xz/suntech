@@ -677,3 +677,376 @@
     font-size: 14px;
 }
 /* end page-footer */
+
+
+/* page 1*/
+.breadcrumb_content {
+    padding: 0;
+    margin-bottom: -30px;
+}
+.breadcrumb_content ul {
+    padding-left: 0;
+    margin: 20px 0px;
+}
+.breadcrumb_content ul li {
+    display: inline-block;
+    text-transform: none;
+    font-size: 14px;
+    margin-right: 3px;
+    padding-right: 13px;
+    position: relative;
+}
+
+.breadcrumb_content ul li a {
+    color: #999;
+}
+
+/* page-columns */
+.page-columns {
+    display: flex;
+    padding-top: 43px;
+}
+.page-columns--main {
+    width: 79%;
+    order: 2;
+}
+.toolbar-products {
+    margin-bottom: 27px;
+}
+.toolbar-amount {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #444444;
+    margin: 0 0 10px;
+}
+.toolbar-sorter {
+    display: flex;
+    padding: 0 10px;
+    background: #E9E9E9;
+}
+.toolbar-sorter .sorter-lable {
+    line-height: 36px;
+    margin: 12px 10px;
+}
+.toolbar-sorter .lbl-title {
+    display: inline-block;
+    margin: 12px 5px;
+    padding: 0;
+    position: relative;
+}
+.toolbar-sorter .lbl-title input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+.toolbar-sorter .lbl-title input[type="radio"]:checked + .lbl-btn {
+    background: var(--color-black);
+    color: var(--color-while);
+}
+.toolbar-sorter .lbl-title input[type="radio"] + .lbl-btn {
+    display: block;
+    padding: 10px 13px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+    background-color: var(--color-while);
+}
+/* end page-columns */
+
+/* product-grid vs item */
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -10px;
+    list-style: none;
+}
+.product-item {
+    padding: 0 10px;
+    width: 25%;
+    list-style: none;
+    margin: 0 0 20px;
+}
+.product-item-info {
+    background-color: var(--color-while);
+    border-radius: 5px;
+    position: relative;
+}
+.product-item-photo {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.product-item-photo .product-img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.45s;
+}
+/* product-detail */
+.product-item-detail {
+    padding: 10px 10px 20px;
+}
+.product-item-title {
+    margin: 0 0 13px;
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+}
+.product-item-title a {
+    color: #444444;
+}
+.product-item-price {
+    display: flex;
+    align-items: center;
+}
+.product-item-price .price {
+    margin-right: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* end product-detail */
+/* end product-grid vs item*/
+
+/* product-item-review */
+.product-item-review .review {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    color: #D3AA3E;
+    padding-left: 18px;
+    background-image: url(../img/social/star-solid-24.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 16px;
+}
+.product-item-review  .buy {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: #666666;
+    padding-left: 18px;
+    background-image: url(../img/social/purchase-tag-alt-solid-24.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px;
+}
+/* product-item-review */
+
+/* page-columns-sidebar */
+.page-columns-sidebar {
+    width: 20.8%;
+    margin-right: 30px;
+}
+.filter-option-title {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-right:15px;
+
+}
+.filter-option .items {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    color: #444444;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.filter-option .item {
+    margin: 0 0 15px;
+}
+.filter-option .item label {
+    display: block;
+    margin: 0;
+    padding:0;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: #444444;
+    position: relative;
+}
+
+.filter-option input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+.filter-option input[type="checkbox"]+span {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 26px;
+}
+.filter-option-item {
+    margin-bottom: 20px;
+}
+.filter-option .price-slide {
+    display: flex;
+    align-items: center;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+.filter-option .price-slide .form-control {
+    background: #FFFFFF;
+    border: 1px solid #A3A3A3;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 36px;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+.filter-option .price-slide .separator1 {
+    display: block;
+    margin: 0 10px 10px;
+    width: 9px;
+}
+.filter-option .price-slide .price-to {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.filter-option .price-slide  .btn {
+    background-color: #000;
+    min-width: 22px;
+    width: 22px;
+    height: 36px;
+    background-image: url(../img/social/right-arrow-solid-24.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px 3px 3px 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.filter-option-item-color .item {
+    margin-bottom: 10px;
+}
+.filter-option .bg-img1 {
+    background-image: url(../img/color/Trắng.jpeg);
+    background-size: cover;
+}
+.filter-option .swatch-option {
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.filter-option .bg-img2 {
+    background-color: #f00;
+}
+.filter-option .bg-img3 {
+    background-color: #000;
+}
+.filter-option .bg-img4 {
+    background-color: #fa9200;
+}
+.filter-option .bg-img5 {
+    background-color: #f4a460;
+}
+.filter-option .bg-img6 {
+    background-image: url(../img/color/Cham\ -\ trang.jpeg);
+    background-size: cover;
+}
+.filter-option .bg-img7 {
+    background-image: url(../img/color/Cham\ -\ Be.jpeg);
+    background-size: cover;
+}
+.filter-option .bg-img8 {
+    /* background-image: url(../img/color/Cham\ -\ Be.jpeg);
+    background-size: cover; */
+    background-color: #444444;
+}
+.filter-option .bg-img9 {
+    background-image: url(../img/color/Cham\ -\ den.jpeg);
+    background-size: cover;
+}
+.filter-option .bg-img10 {
+    background-image: url(../img/color/Chấm\ Xanh.jpeg);
+    background-size: cover;
+}
+.filter-option .bg-img11 {
+    background: #808080;
+}
+.filter-option .bg-img12 {
+    background: #363636;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination li {
+    display: inline-block;
+}
+.pagination li  span,
+.pagination li a {
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    color: #666666;
+    padding: 0;
+    background-color: transparent !important;
+}
+.pagination > li > span {
+    position: relative;
+    float: left;
+}
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.pagination li.active  span {
+    background: #F8B32D !important;
+    border-radius: 100%;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+}
+.pagination .active  span {
+    color: #fff;
+    z-index: 3;
+    cursor: default;
+
+}
+
+/* end pagination */
+/* page-columns-sidebar */
+/* end */
+
+/* end */
