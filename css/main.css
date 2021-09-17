@@ -437,6 +437,7 @@
     width: 100%;
     /* border-radius: 5px; */
     display: block;
+    transition: 0.45s;
 }
 .product-hot__item-detail {
     padding: 20px 18px;
@@ -452,6 +453,13 @@
 }
 .product-hot__item-title a {
     color: #000000;
+}
+.product-hot__item-price .price-old {
+    color: #888888;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    font-weight: normal;
 }
 .product-hot__item-price {
     font-size: 14px;
