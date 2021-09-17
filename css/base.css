@@ -198,6 +198,13 @@ a {
     z-index: 2;
     border-color:#ddd ;
 }
+
+/* page-2 */
+.breadcrumb_content ul li a:hover {
+    color: #ffd54c;
+}
+/* end page-2 */
+
 /* end hover */
 /* before */
 .breadcrumb_content ul li::before {
@@ -250,4 +257,13 @@ a {
 }
 .filter-option .filter-option-item-color input[type="checkbox"]+span::before {
     top: 4px;
+}
+.product-attribute-description table th::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #888888;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
 }
