@@ -37,7 +37,7 @@
                                 Ngôn ngữ
                                 <i class='bx bxs-down-arrow'></i>
                             </span>
-                            <ul class="header__language--content">
+                            <ul class="header__language--content dropdown-menu open">
                                 <li class="header__language-list"><a href="" class="header__language--link">
                                     Tiếng Việt
                                 </a></li>
@@ -49,17 +49,18 @@
                     </div>
                     <div class="header__account">
                         <span class="header__account--trigger">
-                            <i class='bx bxs-user-circle bx-tada bx-flip-horizontal' style='color:#141313; font-size: 17px;' ></i>
                             <span class="account-icon"> 
-                                
                                 Tài khoản
                             </span>  
                         </span>
-                        <ul class="header__account--content">
+                        <ul class="header__account--content dropdown-menu  ">
                             <li>
                                 <a href="">Đăng nhập / Đăng ký</a>
                             </li>
                         </ul>
+                        <form id="logoutform" action="https://ecom.appone.top/customer/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="9WXiBjjV3qzi29TY9oRvBA8TRT20q5JQXLO2emZ2">
+                            </form>
                     </div>
                 </div>
             </div>
@@ -295,7 +296,7 @@
                             <div class="slick-list draggable">
                                 <div class="slick-track" style="opacity: 1; width: 2440px;transform:translate3d(0px,0px,0px);">
                                     <!-- item-product-1 -->
-                                    <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                    <div class="product-hot__item slick-slide slick-current" style="width: 244px;">
                                             <div class="product-hot__item-info">
                                                 <div class="product-hot__item-photo">
                                                     <a href="">
@@ -319,7 +320,7 @@
                                     <!-- end product-item -->
 
                                       <!-- item-product-2 -->
-                                      <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                      <div class="product-hot__item slick-slide slick-current" style="width: 244px;">
                                         <div class="product-hot__item-info">
                                             <div class="product-hot__item-photo">
                                                 <a href="">
@@ -343,7 +344,7 @@
                                 <!-- end product-item -->
 
                                   <!-- item-product-3 -->
-                                  <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                                  <div class="product-hot__item slick-slide slick-current" style="width: 244px;">
                                     <div class="product-hot__item-info">
                                         <div class="product-hot__item-photo">
                                             <a href="">
@@ -367,7 +368,7 @@
                             <!-- end product-item -->
 
                               <!-- item-product-4 -->
-                              <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                              <div class="product-hot__item slick-slide slick-current" style="width: 244px;">
                                 <div class="product-hot__item-info">
                                     <div class="product-hot__item-photo">
                                         <a href="">
@@ -390,7 +391,7 @@
                         </div>
                         <!-- end product-item -->
                           <!-- item-product-5-->
-                          <div class="prodcut-hot-item slick-slide slick-current" style="width: 244px;">
+                          <div class="product-hot__item slick-slide slick-current" style="width: 244px;">
                             <div class="product-hot__item-info">
                                 <div class="product-hot__item-photo">
                                     <a href="">
@@ -465,7 +466,133 @@
                         </div>
                         <a href="#" class="btn-view-all">Xem tất cả</a>
                     </div>
-                    <div class="block-content"></div>
+                    <div class="block-content">
+                        <div class="home-product-hot--slide slick-nav--style1 slick-initialized slick-slider" id="upsell">
+                            <span type="button" class="slick-prev slick-arrow slick-disabled" aria-disabled="true">
+                                <span></span>
+                            </span>
+                            <div class="slick-list draggable">
+                                <div class="slick-track" style="opacity: 1;width: 1952px;transform: translate3d(0px, 0px, 0px);">
+                                   
+                                        <div class="product-hot__item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width:244px;">
+                                            <!-- product-item 1 -->
+                                            <div class="product-hot__item-info">
+                                                <div class="product-hot__item-photo">
+                                                    <a href="">
+                                                        <img src="./img/product-item-3/item-1.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-hot__item-detail">
+                                                    <h3 class="product-hot__item-title">
+                                                        <a href="">Áo thun nữ form rộng 92WEAR in hình ATA1278</a>
+                                                    </h3>
+                                                    <div class="product-hot__item-price">
+                                                        <div class="price">132.500₫</div>
+                                                        <div class="price-old">265.000₫</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            
+                                        </div>
+
+                                        <!-- item-2 -->
+                                        <div class="product-hot__item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width:244px;">
+                                            <!-- product-item 1 -->
+                                            <div class="product-hot__item-info">
+                                                <div class="product-hot__item-photo">
+                                                    <a href="">
+                                                        <img src="./img/product-item-3/item-1.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-hot__item-detail">
+                                                    <h3 class="product-hot__item-title">
+                                                        <a href="">Áo thun nữ form rộng 92WEAR in hình ATA1278</a>
+                                                    </h3>
+                                                    <div class="product-hot__item-price">
+                                                        <div class="price">132.500₫</div>
+                                                        <div class="price-old">265.000₫</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            
+                                        </div>
+                                            <!-- item 3 -->
+                                        <div class="product-hot__item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width:244px;">
+                                            <!-- product-item 1 -->
+                                            <div class="product-hot__item-info">
+                                                <div class="product-hot__item-photo">
+                                                    <a href="">
+                                                        <img src="./img/product-item-3/item-1.jpeg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product-hot__item-detail">
+                                                    <h3 class="product-hot__item-title">
+                                                        <a href="">Áo thun nữ form rộng 92WEAR in hình ATA1278</a>
+                                                    </h3>
+                                                    <div class="product-hot__item-price">
+                                                        <div class="price">132.500₫</div>
+                                                        <div class="price-old">265.000₫</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            
+                                        </div>
+
+                                             <!-- item 4 -->
+                                             <div class="product-hot__item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width:244px;">
+                                                <!-- product-item 1 -->
+                                                <div class="product-hot__item-info">
+                                                    <div class="product-hot__item-photo">
+                                                        <a href="">
+                                                            <img src="./img/product-item-3/item-1.jpeg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-hot__item-detail">
+                                                        <h3 class="product-hot__item-title">
+                                                            <a href="">Áo thun nữ form rộng 92WEAR in hình ATA1278</a>
+                                                        </h3>
+                                                        <div class="product-hot__item-price">
+                                                            <div class="price">132.500₫</div>
+                                                            <div class="price-old">265.000₫</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end -->
+                                                
+                                            </div>
+                                            
+                                                    <!-- item 4 -->
+                                                    <div class="product-hot__item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width:244px;">
+                                                        <!-- product-item 1 -->
+                                                        <div class="product-hot__item-info">
+                                                            <div class="product-hot__item-photo">
+                                                                <a href="">
+                                                                    <img src="./img/product-item-3/item-1.jpeg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-hot__item-detail">
+                                                                <h3 class="product-hot__item-title">
+                                                                    <a href="">Áo thun nữ form rộng 92WEAR in hình ATA1278</a>
+                                                                </h3>
+                                                                <div class="product-hot__item-price">
+                                                                    <div class="price">132.500₫</div>
+                                                                    <div class="price-old">265.000₫</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end -->
+                                                        
+                                                    </div>
+                                </div>
+                            </div>
+                            <span type="button" class="slick-next slick-arrow slick-disabled" aria-disabled="true">
+                                <span></span>
+                            </span>
+                        </div>
+                    </div>
                       <!-- single-banner -->
                 <div class="single-banner ">
                     <div class="banner-thumb ">
@@ -498,7 +625,7 @@
                                 <div class="product-hot__item-detail">
                                     <h3 class="product-hot__item-title">
                                         <a href="" class="product-hot__item-link">
-                                            Đầm nữ công sở 2 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
+                                            Đầm nữ công sở 3 MÀU, đủ size, dáng xòe vạt chéo thân dưới DEA1231
                                         </a>
                                     </h3>
                                     <div class="product-hot__item-price">

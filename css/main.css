@@ -26,9 +26,20 @@
     margin-left: 30px;
     position: relative;
 }
-.header__language--content {
-    display: none;
+.header-language__trigger {
+    color: #666666;
+    cursor: pointer;
+    display: block;
 }
+.header__language--content {
+    left: auto !important;
+    right: 0;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin-top: 7px;
+    top: 100%;
+}
+
 /* account */
 .header__account {
     margin-left: 30px;
@@ -37,8 +48,24 @@
 .account-icon {
     display: none;
 }
+.header__account--trigger {
+    background-image: url(../img/account/user.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #666666;
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
 .header__account--content {
-    display: none;
+    left: auto !important;
+    right: 0;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin-top: 7px;
+    top: 100%;
 }
 .header-content {
     background-color: #000000;
@@ -83,14 +110,28 @@
     position: absolute;
     padding: 5px 0;
     z-index: 10000;
-  
     min-width: 160px;
     text-align: left;
-   top: 100%;
-   left: 0;
+    top: 100%;
+    left: 0;
     float: left;
-    display: none;  
+    display: none;
+    background-color: #fff;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
 }
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
 .header-search__control {
     width: 77%;
 }
@@ -314,13 +355,15 @@
     left: -15px;
     transform: rotate(180deg);
 }
-.home-banner .slick-next {
+.home-banner .slick-next
+{
     right: -15px;
 }
 .home-banner .slick-arrow {
+    background-color: #FFFFFF;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/arrow/right-arrow-alt-solid-24.png);
+    background-image: url(../img/arrow-header/download\ \(1\).svg);
     width: 30px;
     height: 30px;
     position: absolute;
@@ -357,15 +400,26 @@
     color: var(--color-while);
     padding: 10px 98px
 }
-.home-product-hot .home-product-hot--slide {
-    margin: 0 -38px;
+.home-product-hot .block-content {
+    overflow: hidden;
 }
+.home-product-hot .home-product-hot--slide {
+    margin: 0px -10px;
+}
+
 .home-product-hot .slick-prev {
-    left: 0px;
+    left: -15px;
 }
 .home-product-hot .slick-next {
-    right: 0px;
+    right: -15px;
 }
+.home-product-hot .slick-arrow {
+    top: -webkit-calc((100% - 108px)/ 2) !important;
+}
+
+.home-product-hot--slide .prodcut-hot__item {
+    padding: 0  10px;
+}   
 
 .slick-nav--style1 {
     overflow: hidden;
@@ -379,7 +433,7 @@
     height: 50px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url(../img/arrow/right-arrow-regular-24.png);
+    background-image: url(../img/arrow-header/download-arrow.svg);
     background-repeat: no-repeat;
     background-position: left 10px center;
     margin-top: -25px;
@@ -421,7 +475,7 @@
     content: "";
     display: table;
 }
-.home-product-hot--slide .prodcut-hot-item {
+.home-product-hot--slide .product-hot__item {
     padding: 0 10px;
 
 }
@@ -430,7 +484,7 @@
     border-radius: 5px;
 }
 .product-hot__item-photo {
-    overflow: hidden;
+    overflow: hidden !important;
     border-radius: 5px 5px 0 0;
 }
 .product-hot__item-photo img {
@@ -450,7 +504,11 @@
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 .product-hot__item-title a {
     color: #000000;
 }
@@ -490,12 +548,27 @@
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
+.home-product-upsell .home-product-hot--slide {
+    margin: 0 -10px;
+}
+.home-product-upsell .block-content {
+    overflow: hidden;
+}
 .home-product-upsell .title-product {
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
     text-transform: uppercase;
     margin-right: 30px;
+}
+.home-product-upsell .slick-prev {
+    left: -15px;
+}
+.home-product-upsell .slick-next {
+    right: -15px;
+}
+.home-product-upsell .slick-arrow {
+    top: -webkit-calc((100% - 108px)/ 2);
 }
 .home-product-upsell .block-heading .btn-view-all ,
  .product-related .block-title .viewall {

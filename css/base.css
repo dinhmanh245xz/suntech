@@ -12,6 +12,9 @@
     --color-yellow: rgb(228, 205, 102);
     
 }
+.open {
+    display: block;
+}
 img {
     max-width: 100%;
 }
@@ -37,6 +40,9 @@ img {
 .display-row {
     display: flex;
     flex-wrap: wrap;
+   
+}
+.space-beetween {
     justify-content: space-between;
 }
 .justify-center {
@@ -169,6 +175,20 @@ a {
     transition: 0.2s;
 
 }
+.home-banner .slick-arrow:hover {
+    background-color: #e9b02a;
+    background-image: url(../img/arrow-header/download-arrow-while.svg);
+    transition: 0.3s;
+}
+.slick-track::before,
+.slick-track::after {
+    display: table;
+    content: "";
+}
+.slick-nav--style1 .slick-arrow:hover {
+    background-color: #e9b02a;
+    transition: 0.3s;
+}
 .prodcut-hot-item:hover .product-hot__item-photo img {
     transform: scale(1.13);
     transition: 0.45s;
@@ -182,6 +202,10 @@ a {
     color: #e9b02a;
     transition: 0.3s;
 }
+/* .prodcut-hot__item:hover .product-hot__item-photo img {
+    transform: scale(1.13);
+    transition: 0.45s;
+} */
 .product-item:hover .product-item-photo img {
     transform: scale(1.13);
     transition: 0.45s;
