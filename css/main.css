@@ -1629,3 +1629,16 @@ th {
     width: 20%;
 }
 /* end product-related */
+
+.open>.dropdown-menu {
+    display: block;
+}
+.current-bg {
+    background: #fff !important;
+    color: #000 !important;
+    
+}
+.active-bg {
+    background-color: #378648 !important;
+    color: #fff !important;
+}

@@ -37,7 +37,7 @@
                                 Ngôn ngữ
                                 <i class='bx bxs-down-arrow'></i>
                             </span>
-                            <ul class="header__language--content">
+                            <ul class="header__language--content dropdown-menu open">
                                 <li class="header__language-list"><a href="" class="header__language--link">
                                     Tiếng Việt
                                 </a></li>
@@ -49,17 +49,18 @@
                     </div>
                     <div class="header__account">
                         <span class="header__account--trigger">
-                            <i class='bx bxs-user-circle bx-tada bx-flip-horizontal' style='color:#141313; font-size: 17px;' ></i>
                             <span class="account-icon"> 
-                                
                                 Tài khoản
                             </span>  
                         </span>
-                        <ul class="header__account--content">
+                        <ul class="header__account--content dropdown-menu  ">
                             <li>
                                 <a href="">Đăng nhập / Đăng ký</a>
                             </li>
                         </ul>
+                        <form id="logoutform" action="https://ecom.appone.top/customer/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="9WXiBjjV3qzi29TY9oRvBA8TRT20q5JQXLO2emZ2">
+                            </form>
                     </div>
                 </div>
             </div>
@@ -67,7 +68,7 @@
                 <div class="container header-content--container">
                     <!-- logo -->
                     <div class="header-logo">
-                        <a href="./index.html" class="logo-link">
+                        <a href="#" class="logo-link">
                             <img class="img-logo" src="./img/logo/logo.jpeg" alt="" srcset="">
                         </a>
                     </div>
@@ -75,12 +76,12 @@
                     <!-- search -->
                     <div class="header-search">
                         <!-- search category -->
-                        <div class="header-search__category">
+                        <div class="header-search__category open">
                             <span class="header-search__category-trigger" data-toggle="dropdow">
                                 All
 
                             </span>
-                            <ul class="dropdown-menu header-search__category-content">
+                            <ul class="dropdown-menu  header-search__category-content">
                               <li class="list-category"><a href="" class="category-link">
                                   All
 
@@ -149,8 +150,8 @@
                                     <!-- item menu 1 -->
                                     <div class="sub-menu-col">
                                         <ul class="sub-menu-list">
-                                            <li class="sub-menu-title"><a class="menu-items-link" href="">Áo</a></li>
-                                            <li class="m-b-6px"><a class="menu-items-link" href="">Áo sơ mi</a></li>
+                                            <li class="sub-menu-title"><a class="menu-items-link" href="./page-1.html">Áo</a></li>
+                                            <li class="m-b-6px"><a class="menu-items-link" href=" ./page-1.html">Áo sơ mi</a></li>
                                             <li class="m-b-6px"><a class="menu-items-link" href="">Áo kiểu</a></li>
                                             <li class="m-b-6px"><a class="menu-items-link" href="">Áo khoác</a></li>
                                             <li class="m-b-6px"><a class="menu-items-link" href="">Áo Jeans</a></li>
@@ -274,36 +275,36 @@
                             </div>
                             <!-- end toolbar -->
                               <!-- toolbar-amount -->
-                              <div class="toolbar-sorter">
+                              <div class="toolbar-sorter  ">
                                   <span class="sorter-lable">Sắp xếp theo</span>
                                   <!-- lbl 1 checked -->
                                   <label class="lbl-title" for="">
-                                      <input type="radio" name="toolbar-sorter" id="" checked>
-                                      <span class="lbl-btn">Mới nhất</span>
+                                      <input class="radio-btn"  type="radio" name="toolbar-sorter" id=""  checked>
+                                      <span class="lbl-btn " onclick="changeSpan(this)">Mới nhất</span>
                                   </label>
                                   <!-- end lbl -->
                                    <!-- lbl 1 not checked -->
                                    <label class="lbl-title" for="">
                                     <input type="radio" name="toolbar-sorter" id="" >
-                                    <span class="lbl-btn">Bán chạy nhất</span>
+                                    <span class="lbl-btn" onclick="changeSpan(this)">Bán chạy nhất</span>
                                 </label>
                                 <!-- end lbl -->
                                  <!-- lbl 1 not checked -->
                                  <label class="lbl-title" for="">
                                     <input type="radio" name="toolbar-sorter" id="" >
-                                    <span class="lbl-btn">Giá từ cao đến thấp</span>
+                                    <span  class="lbl-btn"onclick="changeSpan(this)">Giá từ cao đến thấp</span>
                                 </label>
                                 <!-- end lbl -->
                                  <!-- lbl 1 not checked -->
                                  <label class="lbl-title" for="">
                                     <input type="radio" name="toolbar-sorter" id="" >
-                                    <span class="lbl-btn">Giá từ thấp đến cao</span>
+                                    <span class="lbl-btn"onclick="changeSpan(this)">Giá từ thấp đến cao</span>
                                 </label>
                                 <!-- end lbl -->
                                 <!-- lbl 1 not checked -->
                                 <label class="lbl-title" for="">
                                     <input type="radio" name="toolbar-sorter" id="" >
-                                    <span class="lbl-btn">Cũ nhất</span>
+                                    <span class="lbl-btn"onclick="changeSpan(this)" >Cũ nhất</span>
                                 </label>
                                 <!-- end lbl -->
                               </div>
@@ -313,9 +314,9 @@
                        <div class="product products-gird">
                         <ol class="product-items">
                             <!-- item-product 1 -->
-                            <li class="product-item">
+                            <li id="tren" class="product-item">
                                 <div class="product-item-info">
-                                    <div class="product-item-photo">
+                                    <div  class="product-item-photo">
                                         <a href="./page-2.html" class="product-item-link">
                                             <img src="./img/products-item/A120N-ASW0829-MII1-01-300x450.jpeg" alt="" class="product-img">
                                         </a>
@@ -337,7 +338,7 @@
                               <!-- end item-product  -->
 
                                 <!-- item-product 2 -->
-                            <li class="product-item">
+                            <li id="mid" class="product-item">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="" class="product-item-link">
