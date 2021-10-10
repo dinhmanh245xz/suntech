@@ -48,6 +48,20 @@ function changeSpan (element) {
     
 }
 
+let thumb = document.querySelectorAll(".thumbs");
+Array.from(thumb).forEach((img)=>{
+    img.addEventListener('click', function () {
+        let srcImg = this.getAttribute('src');
+        document.querySelector('#thumb-main').setAttribute('src',srcImg);
+    })
+})
+
+
+
+
+
+
+
 // document.querySelector(".menu-items > li").hover(function(){
 //     document.querySelector(".header-menu-bg").addClass("active");
 

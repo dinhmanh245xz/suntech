@@ -302,3 +302,21 @@ a {
     display: inline-block;
     margin-right: 10px;
 }
+.slick-next:before {
+    content: '';
+}
+.slick-prev:before {
+    content: '';
+}
+
+/* hover */
+.product-item__img img:hover {
+    transform: scale(1.13);
+    transition: 0.45s;
+}
+
+.product-title .product-link__items:hover{
+    color: #e9b02a;
+    transition: 0.3s;
+
+}
